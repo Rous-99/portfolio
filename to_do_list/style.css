@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+:root{
+    --pink-back:#eeaeca;
+    --blue-back:#94bbe9;
+}
+
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(
+        201deg,
+        var(--pink-back),
+        var(--blue-back)
+    );
+    font-size: 18px;
+}
+
+.container{
+    width: 50%;
+    position: absolute; /*se puede solapar una cosa encima de otra*/
+    transform: translate(-50%,-50%);
+    top:50%;
+    left:50%;
+    padding: 30px 40px; /*30px arriba y abajo, 40 der e izq*/
+}
+
+.task{
+    position: relative; /* creo que es para moverlo en base a su contenedor*/
+    background-color: white;
+    padding: 50px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.task_i{
+    width: 75%;
+    height: 45px; /* crece tb el resto de contenedores*/
+    /* background-color: aqua; */
+    font-family: 'Poppins', sans-serif;
+    font-size: .9rem;
+    border: 2px solid var(--blue-back);
+    padding: 12px;
+    font-weight: 500;
+    position: relative; /* para que sirve esto aqui?*/
+    border-radius: 5px;
+}
+
+.task_i:focus{
+    outline: none;
+    border-color: var(--pink-back);
+}
+
+.task_btn{
+    position: relative;
+    float: right; /*La propiedad CSS float ubica un elemento al lado izquierdo o derecho de su contenedor, permitiendo a los elementos de texto y en línea aparecer a su costado*/
+    width: 20%;
+    height: 45px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: var(--blue-back);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.tasks{
+    background-color: white;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    width: 100%;
+    position: relative;
+}
+
+.new_task{
+    /* background-color:cadetblue; */
+    height: 50px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--blue-back);
+    cursor: pointer;
+}
+
+.task_name{
+    font-family: 'Poppins', sans-serif;
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+.task_delete{
+    background-color: var(--blue-back);
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.completed{
+    text-decoration: line-through;
+}
