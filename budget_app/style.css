@@ -1,0 +1,116 @@
+:root{
+    --dark-grey:#363d55;
+    --medium-grey:#414a67;
+    --light-grey:#d0d0d0;
+    --purple:#587ef4;
+    --light-white: #f7f9fd;
+    --red-color:#ff465a;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-color: var(--light-white);
+}
+
+.main__container{
+    width: 90%;
+    font-size: 1rem;
+    margin: 1rem auto; /* center the container*/
+    /* max-width: 800px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+}
+
+h3{
+    color:var(--dark-grey);
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.main__container input{
+    display: block;
+    margin-top: .4rem;
+    width: 80%;
+    padding: 0.6rem 0.3rem;
+    border: 1px solid var(--light-grey);
+    border-radius: 0.3rem;
+    color: var(--medium-grey);
+    outline: none;
+    font-weight: 400;
+}
+
+.main__container input:focus{
+    border-color: var(--purple);
+}
+
+.budget__container, .expenses__container{
+    background-color: white;
+    padding: 1rem 0.9rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.6rem 1em rgba(28,0,80,0.06);
+}
+
+
+.output__container{
+    margin: 2rem auto;
+    width: 90%;
+    background-color:var(--purple);
+    display: flex;
+    justify-content: space-around;
+    border-radius: 0.3rem;
+    padding: 1rem;
+    box-shadow: 0 0 0.6rem 1.2rem rgba(28,0,80,0.06);
+}
+
+.amount__container{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--light-white);
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.submit{
+    font-size: 1rem;
+    margin-top: 1rem;
+    background-color: var(--purple);
+    border: none;
+    outline: none;
+    color: var(--light-white);
+    padding: .5rem 1.5rem;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+
+.list__container{
+    width: 90%;
+    margin: 3rem auto;
+    font-weight: 500;
+    background-color: var(--light-white);
+    padding: 1rem 2rem;
+    box-shadow: 0 0.6rem 1.2rem rgba(28,0,80,0.06);
+    border-radius: 0.6rem;
+}
+
+.hide{
+    display: none;
+}
+
+.error{
+    color: var(--red-color);
+}

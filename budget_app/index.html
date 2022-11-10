@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main__container">
+        <div class="budget__container">
+            <h3>Budget</h3>
+            <p class="hide error" id="budget-error">Value cannot be empty or negative</p>
+            <input type="number" class="total-amount" placeholder="Enter total amount">
+            <button class="submit" id="btn__budget">Set Budget</button>
+        </div>
+        
+        <div class="expenses__container">
+            <h3>Expenses</h3>
+            <p class="hide error">Values cannot be empty</p>
+            <input type="text" class="product-title" placeholder="Enter title of product">
+            <input type="number"  class="product-amount" placeholder="Enter cost of product">
+            <button class="submit" id="btn__amount">Check Amount</button>
+        </div>
+    </div>
+    <div class="submain__container">
+        <div class="output__container">
+            <div class="amount__container">
+                <p>Total Budget</p>
+                <span class="budget__amount">0</span>
+            </div>
+            <div class="amount__container">
+                <p>Expenses</p>
+                <span class="expense__amount">0</span>
+            </div>
+            <div class="amount__container">
+                <p>Balance</p>
+                <span class="balance__amount">0</span>
+             </div>
+        </div>
+        
+        <div class="list__container">
+            <h3>Expense List</h3>
+            <div class="item__list">
+    
+            </div>
+        </div>
+        
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
