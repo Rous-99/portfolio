@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./style.css"> <!--el ./ indica que el archivo está en la misma carpeta que el archivo html-->
+    <!--
+        añado el enlace a la libreria de animaciones de CSS
+    -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <!--Voy a crear un login con dos campos de entrada, username y password. A su vez un botón que haga el login. También añado una animación que se carga cada vez que actualizo la página-->
+
+    <!--creo el formulario que va a almacenar los datos-->
+    <form action="index.html" class="form-box animate__animated animate__fadeInUp"> <!--añado la clase animated para poder usar la libreria de animaciones-->
+        <h1 class="form-title">SignIn</h1>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>
